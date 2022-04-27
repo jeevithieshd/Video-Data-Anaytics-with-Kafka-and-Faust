@@ -1,5 +1,14 @@
 # Video-Data-Anaytics-with-Kafka-and-Faust
 
+## Requirements
+
+1. pytorch
+2. faust
+3. kafka-python
+4. python-snappy
+
+## How to run the Project
+
 1. Run the Zookeeper with zookeeper_cluster_1.properties in the Zookeepers folder
 2. Run the Servers with server_cluster_1_1.properties and server_cluster_1_2.properties in the Servers folder
 3. Place the Video files to be analysed in the Data/Data1 and Data/Data2 folders.
