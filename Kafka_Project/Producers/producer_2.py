@@ -34,7 +34,7 @@ for video_path in video_paths:
             _, img_buffer_arr = cv2.imencode(".jpg", frame)
             img_bytes = img_buffer_arr.tobytes()
             producer.send(
-                topic = 'image_frame', 
+                topic = 'image_frames', 
                 value = img_bytes,
                 headers=[(str(frame_no),str.encode(video_name))],
                 timestamp_ms=frame_no
